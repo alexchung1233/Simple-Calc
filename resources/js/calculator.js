@@ -7,13 +7,6 @@ var calcQueue = []
 document.body.onload = createButtons;
 console.log("Hello world");
 
-
-// var addButton = document.getElementById("plus_button");
-// addButton.addEventListener("click", addClicked);
-// var minusButton = document.getElementById("minus_button");
-// minusButton.addEventListener("click", minusClicked);
-
-
 var calcButton = document.getElementById("calc_button");
 calcButton.addEventListener("click", calculateClicked);
 var clearButton = document.getElementById("clear_button")
@@ -72,29 +65,6 @@ function createNumberButtons() {
     }
 }
 
-function numberClicked(){
-
-}
-
-function addClicked() {
-    if(calcQueue.length == 0 || typeof(calcQueue[calcQueue.length-1]) === "string") {
-        console.log("No number added or operator already exists")
-        return
-    }
-    calcQueue.push("+");
-    resultDiv.textContent += "+"
-}
-
-
-function minusClicked() {
-    if(calcQueue.length == 0 || typeof(calcQueue[calcQueue.length-1]) === "string") {
-        console.log("No number added or operator already exists")
-        return
-    }
-    calcQueue.push("-");
-    resultDiv.textContent += "-"
-
-}
 
 function calculateClicked() {
     console.log(calcQueue)
