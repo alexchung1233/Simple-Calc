@@ -14,7 +14,19 @@ button {
     color: #000000
   }
 
+  #calculator{
+    background-color: #616A6B;
+    max-width: 375px;
 
+  }
+
+  #title {
+    background-color: #616A6B;
+    border: black;
+    color: white;
+    display: inline-block;
+
+  }
   header {
     font-size: large;
   }
