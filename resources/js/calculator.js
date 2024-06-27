@@ -1,6 +1,13 @@
+/**
+ * Core logic for the calculator app
+ * Contains basic operations like addition and multiplication
+ */
+
+// Get the result div that outputs the sum
 const resultDiv = document.getElementById("result_div")
 var result = null
 
+// Const values for operation values
 const operatorValues = ['+', '-', '/', '*']
 
 var calcQueue = []
@@ -18,7 +25,11 @@ function createButtons(){
     createNumberButtons()
 }
 
+/**
+ * Creates the operation buttons and adds a listener. 
+ */
 function createOperationButtons(){
+
     const body = document.getElementById("main_body")
     for(let i=0;i<operatorValues.length;i++){
         const newDiv = document.createElement("button-div");
@@ -38,6 +49,10 @@ function createOperationButtons(){
     }
 }
 
+
+/**
+ * Creates the number buttons and adds a listener. 
+ */
 function createNumberButtons() {
     const body = document.getElementById("main_body")
     for(let num=0;num<10;num++){
