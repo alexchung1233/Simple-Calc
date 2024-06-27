@@ -21,7 +21,7 @@ function createButtons(){
 function createOperationButtons(){
     const body = document.getElementById("main_body")
     for(let i=0;i<operatorValues.length;i++){
-        const newDiv = document.createElement("operator_button_div");
+        const newDiv = document.createElement("button-div");
         const newOperatorButton = document.createElement("button");
         newOperatorButton.textContent = String(operatorValues[i]);
         newOperatorButton.addEventListener("click", function (e) {
@@ -41,7 +41,7 @@ function createOperationButtons(){
 function createNumberButtons() {
     const body = document.getElementById("main_body")
     for(let num=0;num<10;num++){
-        const newDiv = document.createElement("num_button");
+        const newDiv = document.createElement("button-div");
         const newNumButton = document.createElement("button");
         newNumButton.textContent = String(num);
         newNumButton.addEventListener("click", function (e) {
