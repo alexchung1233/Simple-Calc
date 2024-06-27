@@ -30,7 +30,7 @@ function createButtons(){
  */
 function createOperationButtons(){
 
-    const body = document.getElementById("main_body")
+    const body = document.getElementById("operations_div")
     for(let i=0;i<operatorValues.length;i++){
         const newDiv = document.createElement("button-div");
         const newOperatorButton = document.createElement("button");
@@ -54,7 +54,7 @@ function createOperationButtons(){
  * Creates the number buttons and adds a listener. 
  */
 function createNumberButtons() {
-    const body = document.getElementById("main_body")
+    const body = document.getElementById("numbers_div")
     for(let num=0;num<10;num++){
         const newDiv = document.createElement("button-div");
         const newNumButton = document.createElement("button");

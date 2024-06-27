@@ -1,5 +1,5 @@
 button {
-    background-color: #04AA6D;
+    background-color: #616A6B;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -9,8 +9,23 @@ button {
     font-size: 16px;
   }
 
+  button:hover {
+    background-color: #E1E1E1;
+    color: #000000
+  }
+
+
+  header {
+    font-size: large;
+  }
+
   #result_div {
-    background-color: #04AA6D;
+    background-color: #616A6B;
     color: white;
     font-size: 20px;
+    padding: 25px 12px;
+    max-width: 350px;
+  }
+  #numbers_div {
+    max-width: 400px;
   }
